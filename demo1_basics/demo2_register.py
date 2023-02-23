@@ -15,4 +15,21 @@ driver.find_element(By.NAME,"firstname").send_keys("John")
 driver.find_element(By.NAME,"lastname").send_keys("Wick")
 driver.find_element(By.ID,"password_step_input").send_keys("welcome@@123")
 driver.find_element(By.XPATH,"//input[@value='-1']").click()
-driver.find_element(By.NAME,"websubmit").click()
+time.sleep(5)
+driver.find_element(By.XPATH,"//select[@id='day']").click()
+#driver.find_element(By.XPATH,"//select[text()='2']").click()
+time.sleep(5)
+
+#time.sleep(5)
+#driver.find_element(By.XPATH,"//select[@text()='2']").click()
+#time.sleep(5)
+
+
+
+
+#20 dec 2000 dropdow
+
+#driver.find_element(By.ID,"//select[@day='3']").click()
+
+
+driver.implicitly_wait(10)
