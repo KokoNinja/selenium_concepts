@@ -20,5 +20,6 @@ driver.find_element(By.NAME,"start my free trial").click()
 actual_error=driver.find_element(By.XPATH,"//span[contains(text(),'valid phone')]").text
 print(actual_error)
 time.sleep(5)
+
 driver.quit()
 
